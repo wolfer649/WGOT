@@ -1,6 +1,6 @@
 # World's Greatest Oven Thermometer
 # Overview
-This is a standalone Raspberry Pi hardware assembly project and associated software that can be used to measure, chart and record appliance temperatures over time, using a remote thermocouple probe.
+This is a standalone Raspberry Pi hardware assembly project and associated software that can be used to measure, chart and record appliance temperatures over time, using a cable-attached thermocouple probe.
 # Features
 On the the 2.8" PiTFT capacitive touchscreen, this device will show the current temperature, with the option of an additional save/hold temperature value or even a graph of the temperature over time.
 The selections are chosen by pressing associated buttons on the PiTFT screen's board and by touching the PiTFT screen.
