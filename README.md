@@ -1,4 +1,4 @@
-# World's Greatest Oven Thermometer
+# World's Greatest Oven (Appliance?) Thermometer
 # Overview
 This is a standalone Raspberry Pi hardware assembly project and associated software that can be used to measure, chart and record appliance temperatures over time, using a cable-attached thermocouple probe.
 # Features
@@ -17,15 +17,20 @@ No Internet connection is required, because all of the timing is relative and ty
 
 For development purposes, the software can be tested on an attached X11 HDMI screen/keyboard (or via VNC) without access to the PiTFT itself, by un-commenting a single Python statement, though you definitely need the Perma-Proto Hat board with the MAX31855 board attached.
 # Changes
-None. Proto22 is the first beta version.
+Proto22 is the first beta version.
+
+Proto25 includes the following changes.
+- Fix the problem of the activity LED being left on after the programme exits
+- Save the last two csv log files when the programme is restarted 
+- Change the chart line's colour from red to blue if the current temperature is at or below freezing
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
 
-sudo python Proto22.py
+sudo python Proto25.py
 
 or
 
-sudo python3 Proto22.py
+sudo python3 Proto25.py
 # Known Bugs
-The activity LED may stay on after the software exits. (2019-02-24)
+The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
