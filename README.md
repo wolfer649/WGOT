@@ -34,3 +34,5 @@ or
 sudo python3 Proto25.py
 # Known Bugs
 The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
+
+The csv log does not include time-zero values at startup or after reset. (Proto25 - 2019-03-08)
