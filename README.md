@@ -7,7 +7,7 @@ The selections are chosen by pressing associated buttons on the PiTFT screen's b
 
 You can also reset the timer, in case you want to start recording again – say after a false start or changing adjustment values.
 
-It also creates a csv log file that can later be used offline, to build fancy graphs or spreadsheets for analysis purposes.
+It also creates a csv log file that can later be used offline, to build fancy graphs or spreadsheets for analysis purposes. Two older csv log files are saved, so that data is not lost after a reboot
 
 Optionally, this Linux-based device can be shutdown and/or restarted at the touch of a single button, to avoid having to remove and replace the power supply connection.
 
@@ -23,16 +23,21 @@ Proto25 includes the following changes.
 - Fix the problem of the activity LED being left on after the programme exits
 - Save the last two csv log files when the programme is restarted 
 - Change the chart line's colour from red to blue if the current temperature is at or below freezing
+
+Proto26 adds the following change.
+- Fix the problem with the csv log file not having a time-zero entry
+- Documentation was updated as well.
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
 
-sudo python Proto25.py
+sudo python Proto26.py
 
 or
 
-sudo python3 Proto25.py
+sudo python3 Proto26.py
 # Known Bugs
 The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
 
-The csv log does not include time-zero values at startup or after reset. (Proto25 - 2019-03-08)
+The csv log does not include time-zero values at startup or after restart. (Proto25 - 2019-03-08)
+- Fixed in Proto26
