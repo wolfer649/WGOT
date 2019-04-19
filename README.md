@@ -44,4 +44,4 @@ The csv log does not include time-zero values at startup or after restart. (Prot
 
 Code to force the display to the PiTFT display no longer works with Rasbian Stretch with updates if an X11 display is available.
 - It still displays OK on the PiTFT when started from rc.local.
-- Looking at workaround for this issue.
+- Looking at a workaround for this issue.
