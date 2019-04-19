@@ -41,3 +41,7 @@ The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
 
 The csv log does not include time-zero values at startup or after restart. (Proto25 - 2019-03-08)
 - Fixed in Proto26
+
+Code to force the display to the PiTFT display no longer works with Rasbian Stretch with updates if an X11 display is available.
+- It still displays OK on the PiTFT when started from rc.local.
+- Looking at workaround for this issue.
