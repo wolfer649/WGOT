@@ -29,10 +29,10 @@ Proto26 adds the following changes.
 - Documentation was updated as well.
 
 Proto28 adds the following changes.
-- Fix activity LED not being turned off after keyboard exit, via 'x' key.
-- Improve debug messages, if turned on.
+- Fix activity LED not being turned off after keyboard exit, via 'x' key on main display.
+- Improve debug messages, if enabled in the code.
 - Use Deciaml arithmetic for Temperature Adjustment menu, to avoid odd values with binary math
-- Update docs to show how to log stdout, stderr messages from rc.local
+- Update documentation to show how to log stdout, stderr messages from rc.local
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
