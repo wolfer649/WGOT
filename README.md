@@ -31,8 +31,8 @@ Proto26 adds the following changes.
 Proto28 adds the following changes.
 - Fix activity LED not being turned off after keyboard exit, via 'x' key on main display.
 - Improve debug messages, if enabled in the code.
-- Use Deciaml arithmetic for Temperature Adjustment menu, to avoid odd values with binary math
-- Update documentation to show how to log stdout, stderr messages from rc.local
+- Use Decimal arithmetic for Temperature Adjustment menu, to avoid odd values with binary math.
+- Update documentation to show how to log stdout, stderr messages from rc.local.
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
@@ -54,3 +54,7 @@ Code to force the display to the PiTFT display no longer works with Rasbian Stre
 
 Temperature Adjustment menu can show -0.0 instead of 0.0 (Proto28 - 2019-05-01)
 - This doesn't cause a problem
+
+Forcetft variable no longer forces the display to the PiTFT if an X11 display is active on Rasbian Stretch (Proto28 - 2019-05-01)
+- The PiTFT display still works when it's started from rc.local, even if an HDMI X11 display is attached.
+- i.e. It is still possible to run Proto28 in "headless" mode, using the PiTFT as the only display.
