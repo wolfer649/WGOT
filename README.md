@@ -16,19 +16,19 @@ There is also a handy flashing LED activity indicator, so that you can check if 
 No Internet connection is required, because all of the timing is relative and typical CPU utilization is less than 10%.
 
 For development purposes, the software can be tested on an attached X11 HDMI screen/keyboard (or via VNC) without access to the PiTFT itself, though you definitely need the Perma-Proto Hat board with the MAX31855 board attached to make it work.
-# Changes
-Proto22 is the first beta version.
+# History
+Proto22 was the first beta version.
 
-Proto25 includes the following changes.
+Proto25 included the following changes.
 - Fix the problem of the activity LED being left on after the programme exits
 - Save the last two csv log files when the programme is restarted 
 - Change the chart line's colour from red to blue if the current temperature is at or below freezing
 
-Proto26 adds the following changes.
+Proto26 added the following changes.
 - Fix the problem with the csv log file not having a time-zero entry
 - Documentation was updated as well.
 
-Proto28 adds the following changes.
+Proto28 added the following changes.
 - Fix activity LED not being turned off after keyboard exit, via 'x' key on main display.
 - Improve debug messages, if enabled in the code.
 - Use Decimal arithmetic for Temperature Adjustment menu, to avoid odd values with binary math.
@@ -36,6 +36,7 @@ Proto28 adds the following changes.
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
+There is also an example rc.local in the documentation that will log runtime messages.
 
 sudo python Proto28.py
 
