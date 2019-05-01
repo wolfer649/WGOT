@@ -15,7 +15,7 @@ There is also a handy flashing LED activity indicator, so that you can check if 
 
 No Internet connection is required, because all of the timing is relative and typical CPU utilization is less than 10%.
 
-For development purposes, the software can be tested on an attached X11 HDMI screen/keyboard (or via VNC) without access to the PiTFT itself, by un-commenting a single Python statement, though you definitely need the Perma-Proto Hat board with the MAX31855 board attached.
+For development purposes, the software can be tested on an attached X11 HDMI screen/keyboard (or via VNC) without access to the PiTFT itself, though you definitely need the Perma-Proto Hat board with the MAX31855 board attached to make it work.
 # Changes
 Proto22 is the first beta version.
 
@@ -29,7 +29,7 @@ Proto26 adds the following changes.
 - Documentation was updated as well.
 
 Proto28 adds the following changes.
-- Fix activity LED not being turned off on keyboard exit
+- Fix activity LED not being turned off after keyboard exit, via 'x' key.
 - Improve debug messages, if turned on.
 - Use Deciaml arithmetic for Temperature Adjustment menu, to avoid odd values with binary math
 - Update docs to show how to log stdout, stderr messages from rc.local
