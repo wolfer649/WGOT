@@ -24,18 +24,24 @@ Proto25 includes the following changes.
 - Save the last two csv log files when the programme is restarted 
 - Change the chart line's colour from red to blue if the current temperature is at or below freezing
 
-Proto26 adds the following change.
+Proto26 adds the following changes.
 - Fix the problem with the csv log file not having a time-zero entry
 - Documentation was updated as well.
+
+Proto28 adds the following changes.
+- Fix activity LED not being turned off on keyboard exit
+- Improve debug messages, if turned on.
+- Use Deciaml arithmetic for Temperature Adjustment menu, to avoid odd values with binary math
+- Update docs to show how to log stdout, stderr messages from rc.local
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
 
-sudo python Proto26.py
+sudo python Proto28.py
 
 or
 
-sudo python3 Proto26.py
+sudo python3 Proto28.py
 # Known Bugs
 The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
 
@@ -45,3 +51,6 @@ The csv log does not include time-zero values at startup or after restart. (Prot
 Code to force the display to the PiTFT display no longer works with Rasbian Stretch with updates if an X11 display is available.
 - It still displays OK on the PiTFT when started from rc.local.
 - Looking at a workaround for this issue.
+
+Temperature Adjustment menu can show -0.0 instead of 0.0 (Proto28 - 2019-05-01)
+- This doesn't cause a problem
