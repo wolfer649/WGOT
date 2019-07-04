@@ -33,16 +33,20 @@ Proto28 added the following changes.
 - Improve debug messages, if enabled in the code.
 - Use Decimal arithmetic for Temperature Adjustment menu, to avoid odd values with binary math.
 - Update documentation to show how to log stdout, stderr messages from rc.local.
+
+Proto29 added the following changes.
+- Shift screens to the right, to accommodate PiTFT faceplate for Cyntech case.
+- Minor fixes to comments and debug code.
 # Usage
 Follow the instructions in the documentation to build the hardware and to install pre-requisite software.
 The following command will execute the programme.
 There is also an example rc.local in the documentation that will log runtime messages.
 
-sudo python Proto28.py
+sudo python Proto29.py
 
 or
 
-sudo python3 Proto28.py
+sudo python3 Proto29.py
 # Known Bugs
 The activity LED may stay on after the software exits. (Proto22 - 2019-02-24)
 
@@ -58,4 +62,7 @@ Temperature Adjustment menu can show -0.0 instead of 0.0 (Proto28 - 2019-05-01)
 
 Forcetft variable no longer forces the display to the PiTFT if an X11 display is active on Rasbian Stretch (Proto28 - 2019-05-01)
 - The PiTFT display still works when it's started from rc.local, even if an HDMI X11 display is attached.
-- i.e. It is still possible to run Proto28 in "headless" mode, using the PiTFT as the only display.
+- i.e. It is still possible to run Proto28.py in headless mode, using the PiTFT as the only display.
+
+The activity LED may stop flashing, but the PiTFT buttons still work OK. (Proto29 - 2019-07-03)
+- TBD
